@@ -1,0 +1,202 @@
+:root {
+    --purple: #ca6ee2;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.cont {
+    margin-top: 3rem;
+}
+
+/* purple color shape styling  */
+
+.right-shape  {
+    width: 70px;
+    height: 40px;
+    position: relative;
+    background: var(--purple);
+}
+.right-shape:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.left-shape  {
+    width: 70px;
+    height: 40px;
+    position: relative;
+    background: var(--purple);
+}
+
+.left-shape:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.left-fix {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.right-fix {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.top-right-fix {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* purple color shape styling  */
+
+.center-text {
+    text-align: center;
+}
+
+.bottom-space {
+   margin-bottom: 2rem;
+}
+
+.section-1 {
+    margin-top: 6rem;
+}
+
+
+.intro {
+    padding: 15px 25px;
+    font-weight: 400;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+#hr-line {
+    border-top: 4px dashed var(--purple);
+    width: 50%;
+    margin: 2rem auto 0 auto;
+}
+
+.section-2, .section-3 , .section-4 {
+    margin: 5px 0;
+}
+
+.section-2 > h3 {
+    margin: 2rem;
+}
+
+.heading-section {
+    /* border: 2px solid black; */
+    text-align: center;
+    height: 45px;
+}
+
+.heading {
+    margin-top: 2px;
+    background-color: var(--purple);
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+   
+}
+
+
+/* ---------styling image section --------  */
+
+.img-section {
+    margin: 2rem auto;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.card {
+    text-align: center;
+}
+
+.img-box {
+    /* border: 1px solid red; */
+    height: 100px;
+    width: 100px;
+    margin: 2px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-box img{
+    width: 100%;
+    
+}
+
+.person-name {
+    /* styles for person name  */
+    font-weight: 600;
+}
+
+.person-post {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/*---------- card styling end  */
+
+.section-2, .section-3 , .section-4 {
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 520px) {
+    /* purple color shape styling  */
+
+.right-shape  {
+    width: 50px;
+}
+
+.left-shape  {
+    width: 50px;
+}
+
+/* purple color shape styling  */
+}
